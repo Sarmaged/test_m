@@ -7,7 +7,13 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: tag => tag === 'lottie-player'
+        }
+      }
+    }),
     // minifyHtml(),
     // injectHtml({
     //   injectData: {
@@ -21,9 +27,9 @@ export default defineConfig({
     // })
   ],
   resolve: {
+    extensions: ['.vue', '.js', '.json'],
     alias: {
       '@': path.resolve(__dirname, '/src'),
-      '~bootstrap': 'bootstrap'
     }
   },
   css: {

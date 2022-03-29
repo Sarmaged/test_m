@@ -33,6 +33,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@fortawesome/fontawesome-free", "npm:6.1.1"],\
+            ["@lottiefiles/lottie-player", "npm:1.5.6"],\
+            ["@popperjs/core", "npm:2.11.4"],\
             ["@vitejs/plugin-vue", "virtual:f06f7439d75922dd0840dd4c858cb6b594aead00aa3094db511409fc4de0068e1da4d6902d7a92ecbaf9fd2f1f262eed65bd0e57b8a90b7b792771dc3ac67e81#npm:2.2.4"],\
             ["bootstrap", "virtual:f06f7439d75922dd0840dd4c858cb6b594aead00aa3094db511409fc4de0068e1da4d6902d7a92ecbaf9fd2f1f262eed65bd0e57b8a90b7b792771dc3ac67e81#npm:5.1.3"],\
             ["sass", "npm:1.49.9"],\
@@ -72,11 +75,43 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@fortawesome/fontawesome-free", [\
+        ["npm:6.1.1", {\
+          "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-free-npm-6.1.1-d150e4a9c6/node_modules/@fortawesome/fontawesome-free/",\
+          "packageDependencies": [\
+            ["@fortawesome/fontawesome-free", "npm:6.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@gar/promisify", [\
         ["npm:1.1.3", {\
           "packageLocation": "./.yarn/cache/@gar-promisify-npm-1.1.3-ac1a325862-4059f790e2.zip/node_modules/@gar/promisify/",\
           "packageDependencies": [\
             ["@gar/promisify", "npm:1.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@lit/reactive-element", [\
+        ["npm:1.3.1", {\
+          "packageLocation": "./.yarn/cache/@lit-reactive-element-npm-1.3.1-21cbe105ae-6aea597555.zip/node_modules/@lit/reactive-element/",\
+          "packageDependencies": [\
+            ["@lit/reactive-element", "npm:1.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@lottiefiles/lottie-player", [\
+        ["npm:1.5.6", {\
+          "packageLocation": "./.yarn/cache/@lottiefiles-lottie-player-npm-1.5.6-d97b69aafd-d332109d95.zip/node_modules/@lottiefiles/lottie-player/",\
+          "packageDependencies": [\
+            ["@lottiefiles/lottie-player", "npm:1.5.6"],\
+            ["@types/pako", "npm:1.0.3"],\
+            ["lit", "npm:2.2.1"],\
+            ["lottie-web", "npm:5.9.1"],\
+            ["pako", "npm:2.0.4"],\
+            ["resize-observer-polyfill", "npm:1.5.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -103,11 +138,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@popperjs/core", [\
+        ["npm:2.11.4", {\
+          "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.11.4-aced735dab-36168d274a.zip/node_modules/@popperjs/core/",\
+          "packageDependencies": [\
+            ["@popperjs/core", "npm:2.11.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@tootallnate/once", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
           "packageDependencies": [\
             ["@tootallnate/once", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/pako", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/@types-pako-npm-1.0.3-326289d65c-a0fcada8fe.zip/node_modules/@types/pako/",\
+          "packageDependencies": [\
+            ["@types/pako", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/trusted-types", [\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/@types-trusted-types-npm-2.0.2-035cb17c5e-3371eef5f1.zip/node_modules/@types/trusted-types/",\
+          "packageDependencies": [\
+            ["@types/trusted-types", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -384,7 +446,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-3bc698ab45/0/cache/bootstrap-npm-5.1.3-691fdc19a6-301b5ed872.zip/node_modules/bootstrap/",\
           "packageDependencies": [\
             ["bootstrap", "virtual:f06f7439d75922dd0840dd4c858cb6b594aead00aa3094db511409fc4de0068e1da4d6902d7a92ecbaf9fd2f1f262eed65bd0e57b8a90b7b792771dc3ac67e81#npm:5.1.3"],\
-            ["@popperjs/core", null],\
+            ["@popperjs/core", "npm:2.11.4"],\
             ["@types/popperjs__core", null]\
           ],\
           "packagePeers": [\
@@ -1119,6 +1181,48 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lit", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/lit-npm-2.2.1-735b89f70a-a987111ca9.zip/node_modules/lit/",\
+          "packageDependencies": [\
+            ["lit", "npm:2.2.1"],\
+            ["@lit/reactive-element", "npm:1.3.1"],\
+            ["lit-element", "npm:3.2.0"],\
+            ["lit-html", "npm:2.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lit-element", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/lit-element-npm-3.2.0-e51df048f2-64bd0f05f7.zip/node_modules/lit-element/",\
+          "packageDependencies": [\
+            ["lit-element", "npm:3.2.0"],\
+            ["@lit/reactive-element", "npm:1.3.1"],\
+            ["lit-html", "npm:2.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lit-html", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/lit-html-npm-2.2.1-8946d280d1-8f81d6342d.zip/node_modules/lit-html/",\
+          "packageDependencies": [\
+            ["lit-html", "npm:2.2.1"],\
+            ["@types/trusted-types", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lottie-web", [\
+        ["npm:5.9.1", {\
+          "packageLocation": "./.yarn/cache/lottie-web-npm-5.9.1-ad5cf61878-f8895754bc.zip/node_modules/lottie-web/",\
+          "packageDependencies": [\
+            ["lottie-web", "npm:5.9.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lru-cache", [\
         ["npm:6.0.0", {\
           "packageLocation": "./.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip/node_modules/lru-cache/",\
@@ -1369,6 +1473,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["pako", [\
+        ["npm:2.0.4", {\
+          "packageLocation": "./.yarn/cache/pako-npm-2.0.4-1d4e28f3ac-82b9b0b99d.zip/node_modules/pako/",\
+          "packageDependencies": [\
+            ["pako", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["path-is-absolute", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-060840f92c.zip/node_modules/path-is-absolute/",\
@@ -1468,6 +1581,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["readdirp", "npm:3.6.0"],\
             ["picomatch", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["resize-observer-polyfill", [\
+        ["npm:1.5.1", {\
+          "packageLocation": "./.yarn/cache/resize-observer-polyfill-npm-1.5.1-603120e8a0-57e7f79489.zip/node_modules/resize-observer-polyfill/",\
+          "packageDependencies": [\
+            ["resize-observer-polyfill", "npm:1.5.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1701,6 +1823,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["test_m", "workspace:."],\
+            ["@fortawesome/fontawesome-free", "npm:6.1.1"],\
+            ["@lottiefiles/lottie-player", "npm:1.5.6"],\
+            ["@popperjs/core", "npm:2.11.4"],\
             ["@vitejs/plugin-vue", "virtual:f06f7439d75922dd0840dd4c858cb6b594aead00aa3094db511409fc4de0068e1da4d6902d7a92ecbaf9fd2f1f262eed65bd0e57b8a90b7b792771dc3ac67e81#npm:2.2.4"],\
             ["bootstrap", "virtual:f06f7439d75922dd0840dd4c858cb6b594aead00aa3094db511409fc4de0068e1da4d6902d7a92ecbaf9fd2f1f262eed65bd0e57b8a90b7b792771dc3ac67e81#npm:5.1.3"],\
             ["sass", "npm:1.49.9"],\

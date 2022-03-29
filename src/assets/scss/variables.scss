@@ -1,13 +1,90 @@
-$primary: #42b983;
-$body-color: #304455;
-$info:    #73abfe;
-$gray-100: #f6f6f6;
-$text-muted: #4e6e8e;
-$gray-900: #273849;
-$dark: #273849;
+@import "bootstrap/scss/functions";
 
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+//$primary:       $blue;
+//$secondary:     $gray-600;
+//$success:       $green;
+//$info:          $cyan;
+//$warning:       $yellow;
+//$danger:        $red;
+$light:         #fff;
+//$dark:          $gray-900;
 
-$navbar-dark-color: rgba($white, .7);
+$enable-caret:                true;
+$enable-rounded:              true;
+$enable-shadows:              true;
+$enable-gradients:            false;
+$enable-transitions:          true;
+$enable-reduced-motion:       false;
+$enable-smooth-scroll:        false;
+$enable-grid-classes:         true;
+$enable-cssgrid:              false;
+$enable-button-pointers:      true;
+$enable-rfs:                  true;
+$enable-validation-icons:     false;
+$enable-negative-margins:     false;
+$enable-deprecation-messages: false;
+$enable-important-utilities:  false;
+
+$grid-gutter-width: 3.7rem;
+
+$btn-border-width: 0;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 516px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1360px
+);
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Create your own map
+$custom-colors: (
+  "primary": #FF6067
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/utilities";
+
+.btn.btn-primary {
+  color: $white;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 55px;
+
+  border-radius: 3.61587px;
+
+  &:hover {
+    color: $white;
+  }
+
+  @include media-breakpoint-up(xs) {
+    min-width: 100%;
+  }
+  @include media-breakpoint-up(sm) {
+    min-width: 313px;
+  }
+}

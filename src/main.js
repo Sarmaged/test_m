@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import "bootstrap/scss/bootstrap.scss";
+import "./assets/scss/app.scss";
+import "./assets/js/app"
 
-createApp(App).mount('#app')
+import "@lottiefiles/lottie-player";
+
+const app = createApp(App)
+app.mount('#app')
